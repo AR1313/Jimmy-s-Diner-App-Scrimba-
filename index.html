@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Smythe&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <img class="header-img" src='/images/header.jpg'><img>
+
+    <div id="menu-container">
+        <div class="food">
+            <img class="food-icon"></img>
+            <div class="food-text">
+                <h1 class="food-name"></h1>
+                <h2 class="food-details"></h2>
+                <h3 class="food-price"></h3>
+            </div>
+            <button class="add-btn"> + </button>
+        </div>
+    </div>
+
+    <div id="your-order-container">
+    </div>
+
+    <div id="payment-modal" class="modal display-none">
+        <h1 class="header-modal">Enter card details<h1>
+                <form id="payment-form">
+                    <div class="labels-container" id="labels-container">
+                        <label for="user-fullname"></label>
+                        <input type="text" id="user-fullname" name="user-fullname" placeholder="Enter your name">
+
+                        <label for="user-cardnumber"></label>
+                        <input type="text" id="user-cardnumber" name="user-cardnumber"
+                            placeholder="Enter your card number">
+
+                        <label for="user-cvv"></label>
+                        <input type="text" id="user-cvv" name="user-cvv" placeholder="Enter CVV">
+                    </div>
+                    <button type="submit" id="pay-btn" class="submit-button pay">Pay</button>
+
+                </form>
+    </div>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
